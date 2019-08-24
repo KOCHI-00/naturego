@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--    ウェブフォント：NOTOSANS-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+    <title>NATUERE GO</title>
+    <link rel="stylesheet" href="modern-normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/seasoncard-top.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+    <header id="page-head">
+        <nav class="global-nav container">
+            <ul>
+                <li><a href="#">NATURE GO</a></li>
+                <li><a href="#">観察会をさがす</a></li>
+                <li><a href="#">観察会を登録する</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrap">
+        <!--    <section class="hero">-->
+        <div class="topmain">
+            <img src="./img/top/top_R0019290_1080px.png" alt="top1">
+
+
+            <!-- トップの検索まど -->
+            <div class="search-top">
+                <div>
+                    <h1>行ける観察会を今すぐさがす</h1>
+                    <form action="※ここに、WPのデータベースのURLを入れる" method="post">
+                        <p>期間</p>
+                        <!-- <label for="date"> ←項目名をクリックして入力可能になるような、ひとまとまり要素なので、このカレンダーでは不要-->
+                        <input type="date" name="date" class="form">
+                        から、
+                        <input type="date" name="date" class="form">
+
+                        <p>エリア</p>
+                        <select name="pref_name" class="form">
+                            <option value="" selected>どちらですか？</option>
+                            <option value="北海道">北海道</option>
+                            <option value="青森県">青森県</option>
+                            <option value="岩手県">岩手県</option>
+                            <option value="宮城県">宮城県</option>
+                            <option value="秋田県">秋田県</option>
+                            <option value="山形県">山形県</option>
+                            <option value="福島県">福島県</option>
+                            <option value="茨城県">茨城県</option>
+                            <option value="栃木県">栃木県</option>
+                            <option value="群馬県">群馬県</option>
+                            <option value="埼玉県">埼玉県</option>
+                            <option value="千葉県">千葉県</option>
+                            <option value="東京都">東京都</option>
+                            <option value="神奈川県">神奈川県</option>
+                            <option value="新潟県">新潟県</option>
+                            <option value="富山県">富山県</option>
+                            <option value="石川県">石川県</option>
+                            <option value="福井県">福井県</option>
+                            <option value="山梨県">山梨県</option>
+                            <option value="長野県">長野県</option>
+                            <option value="岐阜県">岐阜県</option>
+                            <option value="静岡県">静岡県</option>
+                            <option value="愛知県">愛知県</option>
+                            <option value="三重県">三重県</option>
+                            <option value="滋賀県">滋賀県</option>
+                            <option value="京都府">京都府</option>
+                            <option value="大阪府">大阪府</option>
+                            <option value="兵庫県">兵庫県</option>
+                            <option value="奈良県">奈良県</option>
+                            <option value="和歌山県">和歌山県</option>
+                            <option value="鳥取県">鳥取県</option>
+                            <option value="島根県">島根県</option>
+                            <option value="岡山県">岡山県</option>
+                            <option value="広島県">広島県</option>
+                            <option value="山口県">山口県</option>
+                            <option value="徳島県">徳島県</option>
+                            <option value="香川県">香川県</option>
+                            <option value="愛媛県">愛媛県</option>
+                            <option value="高知県">高知県</option>
+                            <option value="福岡県">福岡県</option>
+                            <option value="佐賀県">佐賀県</option>
+                            <option value="長崎県">長崎県</option>
+                            <option value="熊本県">熊本県</option>
+                            <option value="大分県">大分県</option>
+                            <option value="宮崎県">宮崎県</option>
+                            <option value="鹿児島県">鹿児島県</option>
+                            <option value="沖縄県">沖縄県</option>
+                        </select>
+                        <div class="btn-center">
+                            <button type="submit" class="btn-circle">GO</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- トップの検索まどここまで -->
+
+        <!--        </section>-->
+
+        <!-- ここから季節のタイル  -->
+        <h1>季節のおすすめ観察テーマ</h1>
+        <section>
+            <div class="container">
+                <div class="season-card">
+                    <a href="##">
+                        <img src="./img/card/season-semi_1000px.jpg" alt="セミの抜け殻">
+                        <h2 class="card-title">夏の主役、セミ</h2>
+                        <p>なぁんだ、ありふれてる。そんなふうに言わずに、ちょっとだけ観察しに行ってみませんか？抜け殻だけでも種類がわかる、自由研究の救世主です。</p>
+                        <button class="button">もっと見る</button>
+                    </a>
+                </div>
+
+                <div class="season-card">
+                    <a href="##">
+                        <img src="./img/card/season-beetle_1000px.jpg" alt="クワガタムシ">
+                        <h2 class="card-title">むしの世界</h2>
+                        <p>クワガタ、カブトムシ…あっ、他にもあんなむしが！いろいろなむしが、待ってましたと飛び出す季節。いろいろなむしを見て、生きものの奥深さを感じよう！</p>
+                    </a>
+                </div>
+
+                <div class="season-card">
+                    <a href="##">
+                        <img src="./img/card/season-bird_1000px.jpg" alt="ツバメ">
+                        <h2 class="card-title">夏の渡り鳥</h2>
+                        <p>暑い夏を目前に、日本で新しい命を育もうと渡ってくる鳥たち。あんな鳥こんな鳥、世界を旅する鳥たちに会いに行きませんか？</p>
+                    </a> </div>
+            </div>
+        </section>
+
+        <!-- ↑悩ましい季節のタイル  -->
+
+
+        <section class="container">
+            <div class="search-tile">
+                <a href="#">
+                    <img src="./img/2x/icon_area-date.png" alt="エリア・日付でさがす">
+                    <p>エリア・日付でさがす</p>
+                </a>
+            </div>
+
+            <div class="search-tile">
+                <a href="#">
+                    <img src="./img/2x/icon_map.png" alt="地図でさがす">
+                    <p>地図でさがす</p>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="explain">
+            <h1>自然観察会について</h1>
+            <p>五感をつかって気づきを得る、体験型の学習プログラムです。<br>
+                といっても、堅苦しいものではなく、とにかくその場で「感じる」ことが一番！匂いをかいだり、触ったり、音を聞いたり、味わったり…<br>
+                四季折々の観察テーマを楽しみながら好奇心を満たしに行きましょう！</p>
+        </section>
+    </div>
+
+    <footer id="page-foot">
+        <nav class="global-nav">
+            <ul>
+                <li><a href="#">NATURE GO</a></li>
+                <li><a href="#">さがす</a></li>
+                <li><a href="#">登録する</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
