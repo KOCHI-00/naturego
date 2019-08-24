@@ -1,0 +1,78 @@
+
+
+
+/* ↓seasoncard-top.cssにあるから、ここではコメントアウト */
+/*
+.container {
+    display: flex;
+    /*    flex-direction: row;*/
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    margin: auto;
+} */
+
+/* トップに掲載されてるシーズン特出し用のカードの設定 */
+.season-card-list {
+    /*もしかしたら、ここのフレックスアイテムのwidth設定がフレックスの効かない原因かも…*/
+    min-width:300px;
+    max-width: 300px;
+/*    width: calc(100% - 10px);*/
+    margin: 0 30px 30px 30px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #ccc;
+    /*    margin: 0px 20px 20px 20px;*/
+    position: relative;
+    background-color: #FFF;
+    /* ここのカード、仕様詳細をチェック… */
+}
+
+
+.season-card-list img {
+    width: 100%;
+    height: 200px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.season-card-list p {
+    padding-right: 20px;
+    padding-left: 20px;
+    /* padding-bottom: 30px; */
+}
+
+/* ↓seasoncard-top.cssにあるからこっちはコメントアウト */
+/* .card-title {
+    font-size: 1.3em;
+    font-style: bold;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+} */
+
+
+/* ↓seasoncard-top.cssにあるからこっちはコメントアウト */
+/* .button {
+    border-radius: 8px;
+    padding: 8px;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+} */
+
+
+.list-date{
+    font-size: 1.5em;
+    color: #808080;
+    margin: 0 auto;
+}
+
+.list-area{
+color: #808080;
+margin: 0 0 10px;
+
+
+}
